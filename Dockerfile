@@ -36,6 +36,6 @@ COPY --from=builder --chown=nextjs:nodejs /app/packages/database/migrations ./ap
 
 USER nextjs
 
-EXPOSE 3000
+EXPOSE 3100
 
 CMD HOSTNAME="0.0.0.0" node apps/web/server.js
